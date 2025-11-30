@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 
 //only the selected one's bean is created
-@ConditionalOnProperty(name = "payment.method", havingValue = "esewa")
+@ConditionalOnProperty(name = "transaction_method", havingValue = "esewa")
 public class EsewaPayService implements Payment {
     @Override
     public String pay() {

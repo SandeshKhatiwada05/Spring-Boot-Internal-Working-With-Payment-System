@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@Primary
 //here we use two payment methods where this one is chosen as primary
 
-@ConditionalOnProperty(name = "payment.method", havingValue = "sandesh")
+@ConditionalOnProperty(name = "transaction_method", havingValue = "sandesh")
 public class SandeshPayService implements Payment{
 
     public String pay(){
